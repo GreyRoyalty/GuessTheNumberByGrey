@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.progress-container {
+    margin: 2rem 0;
+}
+
+.digit {
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 5px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.digit.filled {
+    background: #74ebd5;
+    color: white;
+}
+
+.input-area {
+    margin: 1.5rem 0;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #acb6e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #8a94d4;
+}
+
+.status {
+    margin: 1.5rem 0;
+}
+
+#message {
+    color: #555;
+    font-weight: bold;
+}
+
+#attempts {
+    color: #ff5555;
+}
+
+.restart {
+    background: #ff7777;
+    display: none;
+}
+
+.restart:hover {
+    background: #ff5555;
+}
